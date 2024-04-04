@@ -6,17 +6,15 @@ window.onload = () => {
 };
 
 let excuseGen = () => {
-    let pronoun = ['A', 'The'];
-    let subject = ['jogger', 'racoon', 'dog', 'driver', 'comedian', 'pincone'];
-    let action = ['took my', 'threw my', 'yelled at my', 'stole my', 'bit my'];
-    let object = ['homework', 'toe', 'car', 'shoe'];
-    let where = ['on the streets', 'in my house', 'in my driveway'];
+    let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+    let action = ['ate', 'peed', 'crushed', 'broke'];
+    let what = ['my homework', 'my phone', 'the car'];
+    let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
-    let proIndx = Math.floor(Math.random() * pronoun.length);
-    let subjIndx = Math.floor(Math.random() * subject.length);
+    let whoIndx = Math.floor(Math.random() * who.length);
     let actionIndx = Math.floor(Math.random() * action.length);
-    let objectIndx = Math.floor(Math.random() * object.length);
-    let whereIndx = Math.floor(Math.random() * where.length);
+    let whatIndx = Math.floor(Math.random() * what.length);
+    let whenIndx = Math.floor(Math.random() * when.length);
 
-    return pronoun[proIndx] + ' ' + subject[subjIndx] + ' ' + action[actionIndx] + ' ' + object[objectIndx] + ' ' + where[whereIndx];
+    return who[whoIndx] + ' ' + action[actionIndx] + ' ' + what[whatIndx] + ' ' + when[whenIndx];
 };
